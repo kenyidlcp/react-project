@@ -16,3 +16,12 @@ VS Code's Extensions
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 [NodeJS](https://nodejs.org/en)
+
+[Vite JS](https://vite.dev/)
+```bash
+npm create vite@latest
+
+npm install
+
+npm run dev
+```
