@@ -1,44 +1,25 @@
-const invoice = {
-    id: 10,
-    name: 'Compras de oficina',
-    date: new Date(),
-    client: {
-        id: 2,
-        name: 'Jhon',
-        lastName: 'Doe',
-        age: 20,
-    },
-    items: [
-        {
-            producto: 'keyboard',
-            price: 399,
-            quantity: 3,
-        },
-        {
-            producto: 'mouse',
-            price: 120,
-            quantity: 4,
-        },
-        {
-            producto: 'paper',
-            price: 100,
-            quantity: 10,
-        }
-    ],
-    total: function() {
-        let total = 0;
-        this.items.forEach(item => {
-            total = total + item.price * item.quantity;
-        });
-        return total;
-    },
-    greeting: function() {
-        return `Hola ${this.client.name}`;
-    }
-};
+const products = ['Mesa', 'Silla', 'Notebook', 'Teclado'];
 
-const invoice2 = invoice;
+products.push('Pantalla LCD', 'Sony TV');
 
-const result = invoice == invoice2;
+console.log(products);
 
-console.log(result);
+products.forEach(function(el) {
+    console.log(el);
+});
+
+products.forEach(el => console.log(el));
+
+products.forEach( console.log );
+
+for(const prod of products) {
+    console.log(prod);
+}
+
+for (let index = 0; index < products.length; index++) {
+    const element = products[index];
+    console.log(element);
+    
+}
+
+console.log(products[4]);
